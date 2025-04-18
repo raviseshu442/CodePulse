@@ -20,7 +20,7 @@ steps:
   displayName: 'npm install and build'
 
 - script: |
-    ng build  --configuration= production 
+    ng build  
   displayName: 'npm install and build'
 - task: Bash@3
   inputs:
