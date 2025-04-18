@@ -17,12 +17,8 @@ steps:
 
 - script: |
     npm install
-    
+    ng build --prod --configuration production --aot=true --buildOptimizer=true
   displayName: 'npm install and build'
-- task: Npm@1
-  inputs:
-    command: 'custom'
-    customCommand: 'ng build --configuration=production'
 
 - task: PublishBuildArtifacts@1
   inputs:
