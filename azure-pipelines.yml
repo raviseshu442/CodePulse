@@ -22,13 +22,7 @@ steps:
 - script: |
     ng build  
   displayName: 'npm install and build'
-- task: Bash@3
-  inputs:
-    targetType: 'inline'
-    script: |
-      # Write your commands here
-      
-      echo '$(System.DefaultWorkingDirectory)'
+
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(System.DefaultWorkingDirectory)/dist/code-pulse'
