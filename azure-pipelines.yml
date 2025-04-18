@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  name: 'RDPLOCAL' 
+  name: 'RPDLOCAL' 
 
 steps:
 - task: NodeTool@0
