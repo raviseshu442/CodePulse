@@ -22,7 +22,7 @@ steps:
 - task: Npm@1
   inputs:
     command: 'custom'
-    customCommand: 'ng build'
+    customCommand: 'ng build --configuration=production'
 
 - task: PublishBuildArtifacts@1
   inputs:
