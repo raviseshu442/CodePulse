@@ -20,8 +20,9 @@ steps:
     npm run build
   displayName: 'npm install and build'
 
+
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: 'dist/CodePulse'
-    ArtifactName: 'drop'
+    PathtoPublish: '$(System.DefaultWorkingDirectory)/dist'
+    ArtifactName: 'webapp'
     publishLocation: 'Container'
