@@ -17,11 +17,10 @@ steps:
 
 - script: |
     npm install
-    ng build --prod --configuration production --aot=true --buildOptimizer=true
   displayName: 'npm install and build'
 
 - script: |
-    ng build --prod --configuration production --aot=true --buildOptimizer=true
+    ng build  --configuration= production 
   displayName: 'npm install and build'
 - task: Bash@3
   inputs:
